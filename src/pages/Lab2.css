@@ -1,0 +1,116 @@
+.lab2{
+  color:white;
+  min-height:100vh;
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.lab2__open{
+  background:rgb(97, 218, 255);
+  /* clip-path: circle(4.0% at 50% 50%); */
+  position:fixed;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  color:white;
+  display:flex;
+  justify-content: center;
+  align-items:center; 
+  z-index:99999;
+}
+
+.lab2__open p{
+  position: absolute;
+  width: 5%;
+  right: 3.5%;
+  top: 47.5%;
+  text-align: center;
+}
+
+.lab2__left{
+  /* background:white; */
+  top:0;
+  /* right:0; */
+  left:-50%;
+  bottom:0;
+  position:absolute;
+  height:100%;
+  transform:skew(-10deg);
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  /* overflow:hidden; */
+}
+
+.lab2__leftCircle{
+  background:rgb(57, 143, 100);
+  /* border-radius:100%; */
+  /* transform:skew(10deg); */
+  position:absolute;
+  right:0px;
+  height:100%;
+  width:100%;
+}
+
+.lab2__right{
+  /* background:black; */
+  top:0;
+  /* right:0; */
+  left:50%;
+  bottom:0;
+  position:absolute;
+  transform:skew(-10deg);
+  width:100%;
+  /* overflow:hidden; */
+}
+
+.lab2__rightCircle{
+  background:rgb(110, 219, 165);
+  /* transform:skew(10deg); */
+  position:absolute;
+  left:0px;
+  height:100%;
+  width:100%;
+}
+
+.lab2__text{
+  z-index:999;
+  flex:0.6;
+  
+}
+
+.lab2__textContainer{
+  display:flex;
+  flex-direction:column;
+  width:50%;
+  gap:50px;
+  margin-left: 10%;
+}
+
+.lab2__text h2{
+  color:white;
+  font-size:5rem;
+  border-bottom:5px solid white;
+  padding-bottom:20px;
+}
+
+.lab2__text h3{
+  font-size:2rem;
+  font-weight:300;
+}
+
+.lab2__character{
+  z-index:999;
+  flex:0.4;
+}
+
+.lab2__puppy{
+  filter:drop-shadow(.1rem .7rem 0.3rem rgba(0,0,0,.5));
+  object-fit:contain;
+  height:50%;
+}

@@ -1,0 +1,52 @@
+.gsap{
+  color:white;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  visibility:hidden;
+  overflow-x:hidden;
+  margin-top:50px;
+}
+
+.gsap__wipe{
+  position:fixed;
+  height:100vh;
+  width:100vw;
+  background-color: #51a0fd;
+  top:0px;
+  z-index:100;
+  right:90%;
+}
+
+.gsap__title{
+  font-size:3rem;
+  text-align:center;
+}
+
+.gsap__details{
+  font-weight:300;
+  text-align:center;
+}
+
+.gsap__circleContainer{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.circle{
+  width:75px;
+  height:75px;
+  border-radius:100%;
+  background-color:#FDCF51;
+  margin: 50px;
+}
+
+.circle.red {
+  background-color: #fd5151;
+}
+
+.circle.blue {
+  background-color: #51a0fd;
+}
+

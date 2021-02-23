@@ -1,0 +1,132 @@
+.scrollTriggerComp{
+  color:white;
+  display:flex;
+  flex-direction:column;
+  gap:150px;
+}
+
+.regularScroll{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+}
+
+.scrollTrigger__circles{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.scrollCircle{
+  height:80px;
+  width:80px;
+  border-radius:100%;
+  margin:100px 0;
+}
+
+.triggerRed{
+  background:#fd5151;
+}
+
+.triggerBlue{
+  background:#51a0fd;
+}
+
+.triggerYellow{
+  background:#FDCF51;
+}
+
+.scrubScroll{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pinPanels{
+  width:100%;
+  max-width:800px;
+}
+
+.pinPanel{
+  height:500px;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  font-size:3rem;
+}
+
+.panel1{
+  background:#fd5151
+}
+
+.panel2{
+  background:#51a0fd;
+  height:200px;
+}
+
+.panel3{
+  background:#FDCF51
+}
+
+.panel4{
+  background:#6aff6a
+}
+
+.snapping__section{
+  /* overflow-x:hidden; */
+  width:800px;
+}
+
+.snapping{
+  /* overflow-x:hidden; */
+  width: 600%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.snapPanel{
+  /* flex:1; */
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  font-size:5rem;
+}
+
+.snap1{
+  background:rgba(253, 81, 81, 0.5);
+  background-image: url('../../assets/horizontalpanel1.jpg');
+  background-size:cover;
+  background-position: center center;
+  background-repeat:no-repeat;
+  height:100vh;
+}
+
+.snap2{
+  background:rgba(81, 160, 253, 0.5);
+  background-image: url('../../assets/horizontalpanel2.jpg');
+  background-size:cover;
+  background-position: center center;
+  background-repeat:no-repeat;
+  height:100vh;
+}
+
+.snap3{
+  background:rgba(253, 207, 81, 0.5);
+  background-image: url('../../assets/horizontalpanel3.jpg');
+  background-size:cover;
+  background-position: center center;
+  background-repeat:no-repeat;
+  height:100vh;
+}
+
+.snap4{
+  background:rgba(106, 255, 106, 0.5);
+  background-image: url('../../assets/horizontalpanel4.jpg');
+  background-size:cover;
+  background-position: center center;
+  background-repeat:no-repeat;
+  height:100vh;
+}

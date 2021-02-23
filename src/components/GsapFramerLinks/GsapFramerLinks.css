@@ -1,0 +1,44 @@
+.gsap__framerPageChange{
+  margin-top:100px;
+}
+
+.gsap__framerTitle{
+  font-size:2rem;
+}
+
+.gsap__framerLinks{
+  margin:50px 0;
+  display:flex;
+  justify-content: center;
+  gap:50px;
+}
+
+.gsap__framerLink{
+  text-decoration: none;
+}
+
+.link__curtains{
+  height:200px;
+  width:200px;
+  background:#fd5151;
+  border-radius:20%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  font-size:1.8rem;
+  text-align:center;
+}
+
+.layout__change{
+  height:200px;
+  width:200px;
+  background:#fd5151;
+  border-radius:20%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  font-size:1.8rem;
+  text-align:center;
+}

@@ -1,0 +1,168 @@
+:root{
+  --text: #2e293c;
+  --secondary: #a09da6;
+}
+
+
+.testimonials-section{
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials-container{
+  width:1280px;
+  min-width:1280px;
+  height:600px;
+  position:relative;
+}
+
+.testimonials__arrows{
+  position: absolute;
+  display: flex;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  top: 0;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+  background:rgba(255,255,255,0.3);
+}
+
+.testimonials__arrows:hover{
+  background:white;
+  box-shadow: 0 0 30px rgba(255,255,255,0.5)
+}
+
+.testimonials__arrows.right{
+  right:0;
+}
+
+.testimonials__inner{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  height:600px;
+}
+
+.testimonials__image{
+  width:500px;
+  height:600px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.t-image-ul{
+  display:flex;
+  position:absolute;
+  overflow: hidden;
+  height:460px;
+  width:340px;  
+  box-shadow:0 0 40px rgba(0,0,10, 0.25)
+}
+
+.t-image-li{
+  height:460px;
+  width:340px;
+  color:white;
+  list-style: none;
+}
+
+.testimonials__image ul li img{
+  height:460px;
+  width:340px;
+}
+
+.testimonials__content{
+  height:600px;
+  width:500px;
+  display:flex;
+  align-items: center;
+}
+
+.t-content-ul{
+  position:absolute;
+  overflow:hidden;
+  width:500px;
+  height: 400px;
+}
+
+.t-content-li{
+  width: 500px;
+  height:400px;
+  color: white;
+  display:flex;
+  align-items:center;
+  position:absolute;
+  opacity:0;
+  list-style: none;
+}
+
+.t-content-li.active{
+  opacity:1 
+}
+
+.testimonials__content ul li:nth-child(1)::after{
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 310px;
+  background: white;
+  opacity: 0.3;
+  left: 0;
+  top: 206px;
+}
+
+.testimonials__content ul li:nth-child(2)::after{
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 310px;
+  background: white;
+  opacity: 0.3;
+  left: 0;
+  top: 206px;
+}
+
+.testimonials__content ul li:nth-child(3)::after{
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 310px;
+  background: white;
+  opacity: 0.3;
+  left: 0;
+  top: 206px;
+}
+
+.content__inner {
+  width:500px;
+  color:white;
+}
+
+.quote{
+  font-size:26px;
+  letter-spacing:0.88px;
+  line-height:40px;
+  font-weight:700;
+  margin-bottom:16px;
+}
+
+.name{
+  letter-spacing:0.88px;
+  font-size:18px;
+  line-height: 28px;
+  color:white;
+  font-weight:600;
+}
+
+.title{
+  letter-spacing:0.88px;
+  font-size:18px;
+  line-height: 28px;
+  color:white;
+}
