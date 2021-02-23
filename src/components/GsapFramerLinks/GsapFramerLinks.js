@@ -3,11 +3,11 @@ import "./GsapFramerLinks.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const GsapFramerLinks = ({ onClick1, onClick2, onClick3 }) => {
+const GsapFramerLinks = ({ onClick1, onClick2, onClick3, exit }) => {
   return (
     <motion.div className="gsap__framerPageChange">
       <h2 className="gsap__framerTitle">Animations Using Different Pages</h2>
-      <div className="gsap__framerLinks">
+      <motion.div exit={{ exit }} className="gsap__framerLinks">
         <Link className="gsap__framerLink" to="/curtains">
           <motion.div
             className="link__curtains"
@@ -44,7 +44,7 @@ const GsapFramerLinks = ({ onClick1, onClick2, onClick3 }) => {
             <motion.p exit={{ opacity: 0 }}>Image Transition</motion.p>
           </motion.div>
         </Link>
-      </div>
+      </motion.div>
     </motion.div>
   );
 };

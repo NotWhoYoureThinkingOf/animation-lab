@@ -128,7 +128,7 @@ const Gsap = () => {
         <RevealImage />
       </motion.div>
 
-      <GsapFramerLinks />
+      <GsapFramerLinks exit={fadeTransition && { opacity: 0 }} />
     </motion.div>
   );
 };
