@@ -32,7 +32,7 @@ const GsapFramerLinks = ({ onClick1, onClick2, onClick3, exit }) => {
             <motion.p exit={{ opacity: 0 }}>Layout Change</motion.p>
           </motion.div>
         </Link>
-        <Link className="gsap__framerLink" to="/curtains">
+        <Link className="link__curtains" to="/curtains">
           <motion.div
             className="link__curtains"
             style={{ borderRadius: "20%" }}
@@ -41,7 +41,7 @@ const GsapFramerLinks = ({ onClick1, onClick2, onClick3, exit }) => {
             layoutId="framerLink3"
             layout
           >
-            <motion.p exit={{ opacity: 0 }}>Image Transition</motion.p>
+            <motion.p exit={{ opacity: 0 }}>SVG...maybe?</motion.p>
           </motion.div>
         </Link>
       </motion.div>

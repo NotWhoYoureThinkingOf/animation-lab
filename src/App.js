@@ -11,6 +11,7 @@ import Lab2 from "./pages/Lab2";
 import Gsap from "./pages/Gsap";
 import ReactCurtains from "./components/ReactCurtains/ReactCurtains";
 import LayoutChange from "./pages/LayoutChange";
+import PageTransitions from "./pages/PageTransitions";
 
 function App() {
   return (
@@ -22,6 +23,12 @@ function App() {
         render={({ location }) => (
           <AnimatePresence exitBeforeEnter>
             <Switch location={location} key={location.pathname}>
+              <Route exact path="/wipe" render={() => <Gsap />} />
+              <Route
+                exact
+                path="/page-transitions"
+                render={() => <PageTransitions />}
+              />
               <Route
                 exact
                 path="/layout-change"

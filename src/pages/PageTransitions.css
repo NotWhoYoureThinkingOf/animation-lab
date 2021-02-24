@@ -1,0 +1,89 @@
+.pageTransitions{
+  visibility: hidden;
+  width:100%;
+  min-height:100vh;
+  height:100vh;
+  display: flex;
+  flex-direction:row;
+  overflow:hidden;
+}
+
+.pt__bg{
+  position:fixed;
+  z-index:0;
+  top:0;
+  width:100%;
+}
+
+.pt__wipe{
+  position:fixed;
+  transform:translateX(-100%);
+  width:100%;
+  height:100%;
+  background:black;
+  z-index:10;
+}
+
+.pt__boxes{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:10px;
+  height:100%;
+  width:100%;
+  flex:1;
+  padding:10px;
+}
+
+.ptBox{
+  height:100%;
+  width:100%;
+  flex:1;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-top:1px solid rgba(255,255,255,0.5);
+  border-left:1px solid rgba(255,255,255,0.5);
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border-radius:3%;
+  color:white;
+  position:relative;
+  transition: 0.5s;
+  text-shadow:3px 3px 5px rgba(0,0,0,0.5);
+  overflow:hidden;
+  cursor:pointer;
+  transform:scale(0.95)
+}
+
+.ptBox:hover{
+  transform:scale(1) perspective(200px) rotateY(-5deg) !important;
+  z-index:10;
+}
+
+.ptBox:hover p{
+  transform:scale(1) perspective(200px) rotateY(-5deg) !important;
+  z-index:10;
+}
+
+.ptBox::before{
+  content: '';
+  position:absolute;
+  top:0;
+  left:0;
+  width:50%;
+  height:100%;
+  background:rgba(255,255,255,0.5);
+  transform: skewX(45deg) translateX(1650%);
+  transition:.5s ease-in-out;
+}
+
+
+
+.ptBox:hover::before{
+  transform: skewX(35deg) translate(-200%);
+}
+
+.row1{
+}

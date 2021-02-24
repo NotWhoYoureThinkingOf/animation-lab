@@ -19,7 +19,7 @@ export const MenuItems = () => (
     <MenuItem i="0" link="/" linkname="Home" />
     <MenuItem i="1" link="/gsap" linkname="GSAP" />
     <MenuItem i="2" link="/curtains" linkname="Image Transition" />
-    <MenuItem i="3" link="" linkname="" />
+    <MenuItem i="3" link="/page-transitions" linkname="Page Transitions" />
     <MenuItem i="4" link="" linkname="" />
   </motion.ul>
 );

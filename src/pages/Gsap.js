@@ -1,12 +1,10 @@
 import React, { useRef, useState, useEffect } from "react";
 import "./Gsap.css";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { TweenMax, Power3 } from "gsap";
 import GsapSlider from "../components/GsapSlider/GsapSlider";
 import GsapScrollTrigger from "../components/GsapScrollTrigger/GsapScrollTrigger";
 import RevealImage from "../components/RevealImage/RevealImage";
-import ReactCurtains from "../components/ReactCurtains/ReactCurtains";
 import GsapFramerLinks from "../components/GsapFramerLinks/GsapFramerLinks";
 
 const Gsap = () => {
