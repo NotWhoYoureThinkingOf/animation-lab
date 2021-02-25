@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { TweenMax, Power3 } from "gsap";
 import { Link } from "react-router-dom";
 import brightBG from "../assets/bright-colors.jpg";
+import "./Wipe.css";
 import gsap from "gsap";
 
 const PageTransitions = () => {
@@ -67,8 +68,8 @@ const PageTransitions = () => {
     exit: {
       x: "0%",
       transition: {
-        ease: "easeInOut",
-        duration: 2,
+        ease: "easeOut",
+        duration: 0.6,
       },
     },
   };
@@ -80,7 +81,7 @@ const PageTransitions = () => {
   return (
     <motion.div
       initial="initial"
-      aniamte="aniamte"
+      animate="animate"
       exit="exit"
       className="pageTransitions"
       ref={(el) => (page = el)}
@@ -96,44 +97,44 @@ const PageTransitions = () => {
         variants={wipeVariants}
       ></motion.div>
       <div className="pt__boxes">
-        <Link to="/wipe" onClick={() => wipeOut()}>
+        <Link className="pt__link" to="/wipe" onClick={() => wipeOut()}>
           <motion.div ref={(el) => (box1 = el)} className="ptBox box1 row1">
-            <p>Box 1</p>
+            <p className="pt__title">Wipe Transition</p>
           </motion.div>
         </Link>
 
         <div ref={(el) => (box2 = el)} className="ptBox box2 row1">
-          Box 2
+          <p>Box 2 (Nothin yet)</p>
         </div>
         <div ref={(el) => (box3 = el)} className="ptBox box3 row1">
-          Box 3
+          <p>Box 3 (Nothin yet)</p>
         </div>
         <div ref={(el) => (box4 = el)} className="ptBox box4 row1">
-          Box 4
+          <p>Box 4 (Nothin yet)</p>
         </div>
         <div ref={(el) => (box5 = el)} className="ptBox box5 row2">
-          Box 5
+          <p>Box 5 (Nothin yet)</p>
         </div>
         <div ref={(el) => (box6 = el)} className="ptBox box6 row2">
-          Box 6
+          <p>Box 6 (Nothin yet)</p>
         </div>
         <div ref={(el) => (box7 = el)} className="ptBox box7 row2">
-          Box 7
+          <p>Box 7 (Nothin yet)</p>
         </div>
         <div ref={(el) => (box8 = el)} className="ptBox box8 row2">
-          Box 8
+          <p>Box 8 (Nothin yet)</p>
         </div>
         <div ref={(el) => (box9 = el)} className="ptBox box9 row3">
-          Box 9
+          <p>Box 9 (Nothin yet)</p>
         </div>
         <div ref={(el) => (box10 = el)} className="ptBox box10 row3">
-          Box 10
+          <p>Box 10 (Nothin yet)</p>
         </div>
         <div ref={(el) => (box11 = el)} className="ptBox box11 row3">
-          Box 11
+          <p>Box 11 (Nothin yet)</p>
         </div>
         <div ref={(el) => (box12 = el)} className="ptBox box12 row3">
-          Box 12
+          <p>Box 12 (Nothin yet)</p>
         </div>
       </div>
     </motion.div>

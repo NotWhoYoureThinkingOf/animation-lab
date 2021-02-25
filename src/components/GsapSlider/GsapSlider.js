@@ -156,6 +156,7 @@ const GsapSlider = () => {
 
   return (
     <div className="testimonials-section">
+      <h2 className="testimonials__title">Carousel made with GSAP</h2>
       <div className="testimonials-container">
         <div onClick={prevSlide} className="testimonials__arrows left">
           <img src={leftArrow} alt="" />

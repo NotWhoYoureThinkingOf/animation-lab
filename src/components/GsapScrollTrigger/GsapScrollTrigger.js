@@ -114,7 +114,7 @@ const GsapScrollTrigger = () => {
   return (
     <div className="scrollTriggerComp">
       <div className="regularScroll">
-        <h1>ScrollTrigger</h1>
+        <h1>ScrollTrigger (animate while in set section)</h1>
         <div className="scrollTrigger__circles">
           <div
             ref={(el) => (red = el)}
@@ -150,7 +150,7 @@ const GsapScrollTrigger = () => {
       </div>
 
       <div className="pinScroll">
-        <h1>ScrollTrigger with pinning</h1>
+        <h1 className="pinScroll__title">ScrollTrigger with pinning</h1>
         <div className="scrollTrigger__circles">
           <div
             ref={(el) => (redPin = el)}
@@ -168,6 +168,7 @@ const GsapScrollTrigger = () => {
       </div>
 
       <div className="pinPanels">
+        <h1 className="pinPanels__title">Pinning gives a natural padding</h1>
         <div ref={(el) => (redPanel = el)} className="pinPanel panel1">
           Panel 1
         </div>
@@ -183,6 +184,9 @@ const GsapScrollTrigger = () => {
       </div>
 
       <div className="pinSpacing">
+        <h1 className="pinSpacing__title">
+          But we can disable that if we want
+        </h1>
         <div ref={(el) => (redSpacing = el)} className="pinPanel panel1">
           Panel 1
         </div>
@@ -198,20 +202,22 @@ const GsapScrollTrigger = () => {
       </div>
 
       <div className="snapping__section">
-        <h1>Horizontal Snapping</h1>
+        <h1 className="snapping__title">
+          Horizontal Snapping (or am I moving sideways now...?)
+        </h1>
 
         <div className="snapping" ref={(el) => (snappingGroup = el)}>
           <div ref={(el) => (redSnapping = el)} className="snapPanel snap1">
-            Panel 1
+            <p className="snapping__p">Panel 1</p>
           </div>
           <div ref={(el) => (blueSnapping = el)} className="snapPanel snap2">
-            Panel 2
+            <p className="snapping__p">Panel 2</p>
           </div>
           <div ref={(el) => (yellowSnapping = el)} className="snapPanel snap3">
-            Panel 3
+            <p className="snapping__p">Panel 3</p>
           </div>
           <div ref={(el) => (greenSnapping = el)} className="snapPanel snap4">
-            Panel 4
+            <p className="snapping__p">Panel 4</p>
           </div>
         </div>
       </div>

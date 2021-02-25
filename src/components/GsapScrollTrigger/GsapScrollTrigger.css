@@ -43,9 +43,13 @@
   align-items: center;
 }
 
-.pinPanels{
-  width:100%;
-  max-width:800px;
+.pinScroll__title{
+  text-align:center;
+}
+
+.pinPanels__title{
+  text-align:center;
+  margin-bottom:50px;
 }
 
 .pinPanel{
@@ -71,6 +75,11 @@
 
 .panel4{
   background:#6aff6a
+}
+
+.pinSpacing__title{
+  text-align:center;
+  margin-bottom:50px;
 }
 
 .snapping__section{
@@ -129,4 +138,12 @@
   background-position: center center;
   background-repeat:no-repeat;
   height:100vh;
+}
+
+.snapping__title{
+  margin-bottom:50px;
+}
+
+.snapping__p{
+  text-shadow:2px 2px 5px rgba(0,0,0,1) 
 }

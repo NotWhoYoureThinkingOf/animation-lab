@@ -20,6 +20,12 @@
   font-size:3rem;
 }
 
+.app__notice{
+  font-weight:300;
+  font-size:1.2rem;
+  margin:10px 0;
+}
+
 .app h2{
   width:300px;
 }

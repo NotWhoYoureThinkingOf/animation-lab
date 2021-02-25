@@ -12,6 +12,8 @@ import Gsap from "./pages/Gsap";
 import ReactCurtains from "./components/ReactCurtains/ReactCurtains";
 import LayoutChange from "./pages/LayoutChange";
 import PageTransitions from "./pages/PageTransitions";
+import Wipe from "./pages/Wipe";
+import Awwwards1Main from "./pages/Awwwards1/pages/awwwards1-main";
 
 function App() {
   return (
@@ -23,7 +25,8 @@ function App() {
         render={({ location }) => (
           <AnimatePresence exitBeforeEnter>
             <Switch location={location} key={location.pathname}>
-              <Route exact path="/wipe" render={() => <Gsap />} />
+              <Route exact path="/awwwards1" render={() => <Awwwards1Main />} />
+              <Route exact path="/wipe" render={() => <Wipe />} />
               <Route
                 exact
                 path="/page-transitions"
@@ -48,6 +51,11 @@ function App() {
                     // transition={{ duration: 1 }}
                   >
                     <h1>Welcome to the Animation Lab</h1>
+                    <h2 className="app__notice">
+                      ( Artifacts or lines left visible after animation happens
+                      is a bug with chromium based browsers like Chrome, try
+                      Firefox if it's too annoying )
+                    </h2>
 
                     <div className="animatingOnLoad">
                       <h2>Animating on Load</h2>
@@ -118,7 +126,7 @@ function App() {
                           type: "linear",
                         }}
                       >
-                        <p>Click here to check out the next page</p>
+                        <p>Click here to check out another thing!</p>
                       </motion.div>
                     </Link>
                   </motion.div>

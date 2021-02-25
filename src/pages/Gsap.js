@@ -108,7 +108,7 @@ const Gsap = () => {
         exit="exit"
         variants={fadeVariants}
       >
-        <h1 className="gsap__title">GSAP (Greensock Animation Platform)</h1>
+        <h1 className="gsap__title">GSAP (GreenSock Animation Platform)</h1>
         <h2 className="gsap__details">
           Get ready to refresh a lot while developing
         </h2>

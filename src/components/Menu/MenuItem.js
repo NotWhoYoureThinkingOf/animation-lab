@@ -22,13 +22,14 @@ const variants = {
 // const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
 const colors = ["white", "white", "white", "white", "white"];
 
-export const MenuItem = ({ i, link, linkname }) => {
+export const MenuItem = ({ i, link, linkname, onClick }) => {
   const history = useHistory();
 
   // colors for menu items are looping through colors array. replaceing with white for the sake of understanding
   const style = { border: `2px solid ${colors[i]}` };
   return (
     <motion.li
+      onClick={onClick}
       className="menuItem__li"
       variants={variants}
       whileHover={{ scale: 1.1 }}

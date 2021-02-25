@@ -6,6 +6,7 @@ const HoverTapExample = () => {
   return (
     <motion.div
       className="hoverTapExample"
+      style={{ cursor: "pointer" }}
       whileHover={{ scale: 1.2 }}
       whileTap={{ scale: 0.8 }}
     />

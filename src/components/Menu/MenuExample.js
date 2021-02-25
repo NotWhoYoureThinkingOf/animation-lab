@@ -35,7 +35,7 @@ const MenuExample = () => {
     >
       <motion.div className="background" variants={sidebar}>
         <MenuButtonLines toggle={() => toggleOpen()} />
-        <MenuItems />
+        <MenuItems onClick={() => toggleOpen()} />
       </motion.div>
     </motion.nav>
   );

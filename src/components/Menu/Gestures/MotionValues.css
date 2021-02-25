@@ -15,7 +15,7 @@
   left: calc(50% - 150px / 2);
 }
 
-.box {
+.motion__box {
   background: white;
   border-radius: 30px;
   width: 150px;

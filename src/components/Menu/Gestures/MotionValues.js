@@ -22,8 +22,8 @@ const MotionValue = () => {
   return (
     <motion.div className="motion-container" style={{ background }}>
       <motion.div
-        className="box"
-        style={{ x }}
+        className="motion__box"
+        style={{ x, cursor: "pointer" }}
         drag="x"
         dragConstraints={{ left: 0, right: 0 }}
       >
