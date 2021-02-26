@@ -14,6 +14,7 @@ import LayoutChange from "./pages/LayoutChange";
 import PageTransitions from "./pages/PageTransitions";
 import Wipe from "./pages/Wipe";
 import Awwwards1Main from "./pages/Awwwards1/pages/awwwards1-main";
+import Pinning from "./pages/Pinning";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         render={({ location }) => (
           <AnimatePresence exitBeforeEnter>
             <Switch location={location} key={location.pathname}>
+              <Route exact path="/pinning" render={() => <Pinning />} />
               <Route exact path="/awwwards1" render={() => <Awwwards1Main />} />
               <Route exact path="/wipe" render={() => <Wipe />} />
               <Route

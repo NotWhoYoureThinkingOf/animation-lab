@@ -30,7 +30,7 @@ export const MenuItems = ({ onClick }) => (
       link="/page-transitions"
       linkname="Page Transitions"
     />
-    <MenuItem onClick={onClick} i="4" link="" linkname="" />
+    <MenuItem onClick={onClick} i="4" link="/pinning" linkname="Spinning" />
   </motion.ul>
 );
 

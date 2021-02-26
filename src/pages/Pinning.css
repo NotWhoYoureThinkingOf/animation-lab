@@ -1,0 +1,64 @@
+.pinning{
+  height:100vh;
+}
+
+.pinning__container{
+  color:white;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.pinning__message{
+  margin:400px 0;
+  font-weight:300;
+}
+
+.pinning__spinning{
+  width:100%;
+  margin-left:-275px;
+  position:absolute;
+  height:100%;
+}
+
+.ps__spinner{
+  height:500px;
+  width:500px;
+  border-radius:100%;
+  border:5px solid white;
+  position:absolute;
+  bottom: -160px;
+}
+
+.ps__spinner1{
+  position:absolute;
+  top:0;
+  left:50%;
+  font-size:5rem;
+  transform:rotate(-90deg) translate(120%, -65%);
+}
+
+.ps__spinner2{
+  position:absolute;
+  right:0;
+  left:50%;
+  font-size:5rem;
+  transform:rotate(0deg) translate(120%, 200%);
+}
+
+.ps__spinner3{
+  position:absolute;
+  right:0;
+  left:50%;
+  font-size:5rem;
+  transform:rotate(90deg) translate(252%, 118%);
+}
+
+.ps__spinner4{
+  position:absolute;
+  right:0;
+  left:50%;
+  font-size:5rem;
+  transform:rotate(180deg) translate(221%, -205%);
+}
